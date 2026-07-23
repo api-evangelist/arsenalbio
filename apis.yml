@@ -1,8 +1,23 @@
 aid: arsenalbio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arsenalbio.png
 name: ArsenalBio
-description: 'ArsenalBio is a company surfaced as a portfolio company of kleiner-perkins, softbank-vision-fund
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'ArsenalBio is a privately held, clinical-stage biotechnology company in South San Francisco
+  developing programmable, integrated cell therapies for solid tumors. Its platform engineers
+  autonomous CAR-T cells using large-scale genome engineering and computational biology to create
+  multi-functional therapies. Backed by Kleiner Perkins and SoftBank Vision Fund, the company operates
+  in the healthcare and biotechnology sector. It publishes no public developer API, portal, or
+  documentation; this profile is tracked in the API Evangelist network as a company/provider record.'
 url: https://raw.githubusercontent.com/api-evangelist/arsenalbio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Biotechnology
+- Cell Therapy
+- Immuno-Oncology
+- Drug Discovery
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/arsenalbio-domain-security.yml
 - type: Website
-  url: https://www.arsenalbio.com
+  url: https://arsenalbio.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
